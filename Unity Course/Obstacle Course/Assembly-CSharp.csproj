@@ -623,8 +623,14 @@
  <Reference Include="System.Xml.Serialization">
  <HintPath>G:/Unity Editors/2020.3.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
+ <Reference Include="Cinemachine">
+ <HintPath>G:/GitHub/Unity-Projects/Unity Course/Obstacle Course/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>G:/GitHub/Unity-Projects/Unity Course/Obstacle Course/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="com.unity.cinemachine.editor">
+ <HintPath>G:/GitHub/Unity-Projects/Unity Course/Obstacle Course/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>G:/GitHub/Unity-Projects/Unity Course/Obstacle Course/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
