@@ -143,6 +143,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevelDelay: 2
+  success: {fileID: 8300000, guid: a7e4e0bbd9c4f59448ca5580d3e982a1, type: 3}
+  crash: {fileID: 8300000, guid: fa6ec52e7f88a1344909431c243fb425, type: 3}
 --- !u!82 &86800915
 AudioSource:
   m_ObjectHideFlags: 0
