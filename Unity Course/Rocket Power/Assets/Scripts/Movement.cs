@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    
     [SerializeField] float thrust = 1;
     [SerializeField] float rotationSpeed = 1;
     [SerializeField] AudioClip mainEngine;
@@ -32,56 +31,79 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            // Frame rate independent   
-            rb.AddRelativeForce(Vector3.up * thrust * Time.deltaTime);
-
-            // if audio is not playing then play
-            if (!audioSource.isPlaying)
-            {
-                audioSource.PlayOneShot(mainEngine);
-            }
-            
-            // if particles is not playing then play
-            if (!mainEngineParticles.isPlaying)
-            {
-                mainEngineParticles.Play();
-            }
-            
+            BeginThrusting();
         }
         else
         {
-            // pops here
-            audioSource.Stop();
-            mainEngineParticles.Stop();
-            
+            EndThrusting();
         }
+    }
+
+    private void BeginThrusting()
+    {
+        // Frame rate independent   
+        rb.AddRelativeForce(Vector3.up * thrust * Time.deltaTime);
+
+        // if audio is not playing then play
+        if (!audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(mainEngine);
+        }
+
+        // if particles is not playing then play
+        if (!mainEngineParticles.isPlaying)
+        {
+            mainEngineParticles.Play();
+        }
+    }
+    
+    private void EndThrusting()
+    {
+        // BUG: pops here
+        audioSource.Stop();
+        mainEngineParticles.Stop();
     }
 
     void ProcessRotation()
     {
         if (Input.GetKey(KeyCode.A))
         {
-            ApplyRotation(rotationSpeed);
-            // if particles is not playing then play
-            if (!rightThrusterParticles.isPlaying)
-            {
-                rightThrusterParticles.Play();
-            }
+            RotateLeft();
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            ApplyRotation(-rotationSpeed);
-            // if particles is not playing then play
-            if (!leftThrusterParticles.isPlaying)
-            {
-                leftThrusterParticles.Play();
-            }
+            RotateRight();
         }
         else
         {
-            rightThrusterParticles.Stop();
-            leftThrusterParticles.Stop();
+            StopRotating();
         }
+    }
+    
+    private void RotateLeft()
+    {
+        ApplyRotation(rotationSpeed);
+        // if particles is not playing then play
+        if (!rightThrusterParticles.isPlaying)
+        {
+            rightThrusterParticles.Play();
+        }
+    }
+    
+    private void RotateRight()
+    {
+        ApplyRotation(-rotationSpeed);
+        // if particles is not playing then play
+        if (!leftThrusterParticles.isPlaying)
+        {
+            leftThrusterParticles.Play();
+        }
+    }
+    
+    private void StopRotating()
+    {
+        rightThrusterParticles.Stop();
+        leftThrusterParticles.Stop();
     }
 
     private void ApplyRotation(float rotationThisFrame)

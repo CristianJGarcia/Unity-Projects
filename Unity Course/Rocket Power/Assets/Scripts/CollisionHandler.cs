@@ -10,16 +10,38 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] ParticleSystem successParticles;
     [SerializeField] ParticleSystem crashParticles;
     private AudioSource audioSource;
+    
     private bool isTransitioning = false;
+    private bool isCollisionDisabled = false;
 
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
     }
 
+    private void Update()
+    {
+        DebugKeys();
+    }
+
+    private void DebugKeys()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            LoadNextLevel();
+        }
+        else if (Input.GetKeyDown(KeyCode.C))
+        {
+            // if its enabled disable it vice versa everytime it is called
+            //  A TOGGLE
+            isCollisionDisabled = !isCollisionDisabled;
+        }
+    }
+
     private void OnCollisionEnter(Collision other)
     {
-        if (isTransitioning)
+        // if were transitioning or if collision is disabled then return
+        if (isTransitioning || isCollisionDisabled)
         {
             return;
         }
