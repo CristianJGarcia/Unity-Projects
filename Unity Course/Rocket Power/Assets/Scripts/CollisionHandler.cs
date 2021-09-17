@@ -51,7 +51,7 @@ public class CollisionHandler : MonoBehaviour
         switch (tagName)
         {
             case "Friendly":
-                Debug.Log("This thing is Friendly");
+                //Debug.Log("This thing is Friendly");
                 break;
             case "Finish":
                 StartSuccessSequence();

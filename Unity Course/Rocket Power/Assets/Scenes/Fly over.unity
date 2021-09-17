@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 95ebf50189f880e4aa17c4fdba9007aa, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 8401881fcb9afd34eb383fc90bbbbddc, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1622,15 +1622,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8782583165928252552, guid: b5f62824a2b448346b51e27b746e1497, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.36
+      value: -12.55
       objectReference: {fileID: 0}
     - target: {fileID: 8782583165928252552, guid: b5f62824a2b448346b51e27b746e1497, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.58
+      value: -6.3
       objectReference: {fileID: 0}
     - target: {fileID: 8782583165928252552, guid: b5f62824a2b448346b51e27b746e1497, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.42
+      value: 5.35
       objectReference: {fileID: 0}
     - target: {fileID: 8782583165928252552, guid: b5f62824a2b448346b51e27b746e1497, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3748,6 +3748,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8782583165928252552, guid: b5f62824a2b448346b51e27b746e1497, type: 3}
   m_PrefabInstance: {fileID: 1723072617}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1751076122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3722214680950542716, guid: b5f62824a2b448346b51e27b746e1497, type: 3}
+  m_PrefabInstance: {fileID: 1005861636}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1751076126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751076122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 078424f117dc9a54da84c746ac491c37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementVector: {x: 3, y: -3, z: 0}
+  movementFactor: 0
+  period: 2
 --- !u!4 &1752337492 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8782583165928252552, guid: b5f62824a2b448346b51e27b746e1497, type: 3}
