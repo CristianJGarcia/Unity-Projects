@@ -52,11 +52,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\ALP8310_Assets\Nature Package - Forest Environment_\scripts\Editor\DE_DrawerTextureSingleLine.cs" />
-     <Compile Include="Assets\ALP8310_Assets\Nature Package - Forest Environment_\scripts\Editor\DE_DrawerSliderRemap.cs" />
-     <Compile Include="Assets\ALP8310_Assets\Nature Package - Forest Environment_\scripts\Editor\DE_DrawerToggleNoKeyword.cs" />
-     <Compile Include="Assets\ALP8310_Assets\Nature Package - Forest Environment_\scripts\Editor\DE_ShaderGUI.cs" />
-     <Compile Include="Assets\ALP8310_Assets\Nature Package - Forest Environment_\scripts\Editor\DE_DrawerEmissionFlags.cs" />
+     <Compile Include="Assets\StarSparrow\Readme\Readme Files\Scripts\Editor\ReadmeStarSparrowEditor.cs" />
  <Reference Include="UnityEngine">
  <HintPath>G:/Unity Editors/2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -654,8 +650,14 @@
  <Reference Include="UnityEditor.TestRunner">
  <HintPath>G:/GitHub/Unity-Projects/Unity Course/ArgonDefender/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.TerrainTools">
+ <HintPath>G:/GitHub/Unity-Projects/Unity Course/ArgonDefender/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>G:/GitHub/Unity-Projects/Unity Course/ArgonDefender/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TerrainTools.Editor">
+ <HintPath>G:/GitHub/Unity-Projects/Unity Course/ArgonDefender/Library/ScriptAssemblies/Unity.TerrainTools.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>G:/GitHub/Unity-Projects/Unity Course/ArgonDefender/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -675,34 +677,20 @@
  <Reference Include="UnityEditor.UI">
  <HintPath>G:/GitHub/Unity-Projects/Unity Course/ArgonDefender/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
- <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>G:/GitHub/Unity-Projects/Unity Course/ArgonDefender/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
- </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>G:/GitHub/Unity-Projects/Unity Course/ArgonDefender/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>G:/GitHub/Unity-Projects/Unity Course/ArgonDefender/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
- <Reference Include="Unity.TerrainTools">
- <HintPath>G:/GitHub/Unity-Projects/Unity Course/ArgonDefender/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TerrainTools.Editor">
- <HintPath>G:/GitHub/Unity-Projects/Unity Course/ArgonDefender/Library/ScriptAssemblies/Unity.TerrainTools.Editor.dll</HintPath>
+ <Reference Include="Unity.PlasticSCM.Editor">
+ <HintPath>G:/GitHub/Unity-Projects/Unity Course/ArgonDefender/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{7c88a6cc-bddb-95de-1f7b-4ff25ea51c66}</Project>
       <Name>Assembly-CSharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="DE_ALP8310Controller.csproj">
-      <Project>{b128494f-3f85-d0e5-71b0-04f9f43141a2}</Project>
-      <Name>DE_ALP8310Controller</Name>
-    </ProjectReference>
-    <ProjectReference Include="DE_ALP8310Controller.Global.Editor.csproj">
-      <Project>{f4c3e24a-6c70-5195-f157-a57241785a9a}</Project>
-      <Name>DE_ALP8310Controller.Global.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
