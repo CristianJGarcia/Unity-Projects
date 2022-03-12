@@ -1,10 +1,10 @@
 Using pre-set license
-Built from '2020.3/staging' branch; Version is '2020.3.25f1 (9b9180224418) revision 10195328'; Using compiler version '192528614'; Build Type 'Release'
+Built from '2020.3/staging' branch; Version is '2020.3.30f1 (1fb1bf06830e) revision 2077119'; Using compiler version '192528614'; Build Type 'Release'
 OS: 'Windows 11  (10.0.22000) 64bit Professional' Language: 'en' Physical Memory: 32679 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-G:\Unity Editors\2020.3.25f1\Editor\Unity.exe
+G:\Unity Editors\2020.3.30f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
@@ -15,14 +15,14 @@ G:/GitHub/Unity-Projects/Unity Course/ArgonDefender
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64829
+61322
 Successfully changed project path to: G:/GitHub/Unity-Projects/Unity Course/ArgonDefender
 G:/GitHub/Unity-Projects/Unity Course/ArgonDefender
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 31.09 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 26.55 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2020.3.25f1 (9b9180224418)
-[Subsystems] Discovering subsystems at path G:/Unity Editors/2020.3.25f1/Editor/Data/Resources/UnitySubsystems
+Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
+[Subsystems] Discovering subsystems at path G:/Unity Editors/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path G:/GitHub/Unity-Projects/Unity Course/ArgonDefender/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
@@ -30,94 +30,94 @@ Direct3D:
     Renderer: NVIDIA GeForce RTX 3090 (ID=0x2204)
     Vendor:   
     VRAM:     24348 MB
-    Driver:   30.0.14.9676
+    Driver:   30.0.15.1179
 Initialize mono
-Mono path[0] = 'G:/Unity Editors/2020.3.25f1/Editor/Data/Managed'
-Mono path[1] = 'G:/Unity Editors/2020.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'G:/Unity Editors/2020.3.25f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56444
+Mono path[0] = 'G:/Unity Editors/2020.3.30f1/Editor/Data/Managed'
+Mono path[1] = 'G:/Unity Editors/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'G:/Unity Editors/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56372
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: G:/Unity Editors/2020.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000574 seconds.
+Register platform support module: G:/Unity Editors/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000689 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 20.95 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 24.72 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.355 seconds
+- Completed reload, in  0.379 seconds
 Domain Reload Profiling:
-	ReloadAssembly (355ms)
-		BeginReloadAssembly (33ms)
+	ReloadAssembly (379ms)
+		BeginReloadAssembly (49ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (278ms)
-			LoadAssemblies (32ms)
+		EndReloadAssembly (286ms)
+			LoadAssemblies (49ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (88ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (18ms)
-			SetupLoadedEditorAssemblies (103ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (110ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (2ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (21ms)
+				RefreshPlugins (25ms)
 				BeforeProcessingInitializeOnLoad (9ms)
-				ProcessInitializeOnLoadAttributes (53ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
+				ProcessInitializeOnLoadAttributes (55ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001817 seconds.
+Registered in 0.001670 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 24.79 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.597 seconds
+- Completed reload, in  0.879 seconds
 Domain Reload Profiling:
-	ReloadAssembly (597ms)
-		BeginReloadAssembly (87ms)
+	ReloadAssembly (880ms)
+		BeginReloadAssembly (104ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (476ms)
-			LoadAssemblies (51ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (740ms)
+			LoadAssemblies (68ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (160ms)
+			SetupTypeCache (180ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (187ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (396ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (2ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (56ms)
-				ProcessInitializeOnLoadAttributes (120ms)
+				RefreshPlugins (25ms)
+				BeforeProcessingInitializeOnLoad (45ms)
+				ProcessInitializeOnLoadAttributes (316ms)
 				ProcessInitializeOnLoadMethodAttributes (6ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1500 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 80.0 MB.
-System memory in use after: 80.1 MB.
+Unloading 1693 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.5 MB.
+System memory in use after: 101.4 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1949.
-Total: 2.065900 ms (FindLiveObjects: 0.130000 ms CreateObjectMapping: 0.036500 ms MarkObjects: 1.844200 ms  DeleteObjects: 0.054500 ms)
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2163.
+Total: 2.811900 ms (FindLiveObjects: 0.141100 ms CreateObjectMapping: 0.032100 ms MarkObjects: 2.463200 ms  DeleteObjects: 0.174700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,23 +134,11 @@ AssetImportParameters requested are different than current active one (requested
 Received Import Request.
   path: Assets/New Terrain.asset
   artifactKey: Guid(8f1c71f64d5c63c4780b9ad584c58de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain.asset using Guid(8f1c71f64d5c63c4780b9ad584c58de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e2bd085b0095abbd88e57cd2f90bb63') in 0.034987 seconds 
-  Import took 0.036918 seconds .
-
+Start importing Assets/New Terrain.asset using Guid(8f1c71f64d5c63c4780b9ad584c58de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e4f7aae22ef29792bf1d894a3baacbe') in 0.104411 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.444500 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(20b0bf2ceb673584d817509837ce4ec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(20b0bf2ceb673584d817509837ce4ec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8db436d647c2fa12eebfe8a78a538151') in 0.006947 seconds 
-  Import took 0.008884 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.790794 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd874d13aaf0a764842f0f81e0be6f3a') in 0.007058 seconds 
-  Import took 0.008998 seconds .
-
+  Time since last request: 7074.898315 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(8f1c71f64d5c63c4780b9ad584c58de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(8f1c71f64d5c63c4780b9ad584c58de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99284adda8058aab618bd3a47e4baf97') in 0.023305 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

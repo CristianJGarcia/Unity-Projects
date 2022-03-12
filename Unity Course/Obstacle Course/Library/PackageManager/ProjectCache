@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637735452198041039
-    m_Hash: 3956393721
+      ticks: 637757224949048956
+    m_Hash: 1201345459
   m_LockFileStatus:
     m_FilePath: G:/GitHub/Unity-Projects/Unity Course/Obstacle Course/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637735452198041039
-    m_Hash: 1397138616
+      ticks: 637757224995637446
+    m_Hash: 2426834148
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -173,12 +173,12 @@ m_PackageAssets:
         url: git+https://github.com/Unity-Technologies/com.unity.cinemachine.git
         revision: 21f619698ca31d69054e96556e03097e48e43c5d
         path: 
-    - packageId: com.unity.collab-proxy@1.15.1
+    - packageId: com.unity.collab-proxy@1.15.4
       testable: 0
       isDirectDependency: 1
-      version: 1.15.1
+      version: 1.15.4
       source: 1
-      resolvedPath: G:\GitHub\Unity-Projects\Unity Course\Obstacle Course\Library\PackageCache\com.unity.collab-proxy@1.15.1
+      resolvedPath: G:\GitHub\Unity-Projects\Unity Course\Obstacle Course\Library\PackageCache\com.unity.collab-proxy@1.15.4
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Version Control
@@ -238,7 +238,6 @@ m_PackageAssets:
         - 2.1.0-preview.5
         - 2.1.0-preview.6
         compatible:
-        - 1.15.1
         - 1.15.4
         - 2.0.0-preview.6
         - 2.0.0-preview.8
@@ -289,13 +288,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637705007780000000
+      datePublishedTicks: 637726568460000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-        revision: 44478cbd3117b13beac17ff868e64d0aed5c4071
+        revision: 1275603954ad33bee601fe2c9a3c787b3d4e4c6b
         path: 
     - packageId: com.unity.ide.rider@2.0.7
       testable: 0
@@ -404,12 +403,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
         revision: abb44f053e9a41d2e00e149e32a19bcec76e98b4
         path: 
-    - packageId: com.unity.ide.visualstudio@2.0.11
+    - packageId: com.unity.ide.visualstudio@2.0.12
       testable: 0
       isDirectDependency: 1
-      version: 2.0.11
+      version: 2.0.12
       source: 1
-      resolvedPath: G:\GitHub\Unity-Projects\Unity Course\Obstacle Course\Library\PackageCache\com.unity.ide.visualstudio@2.0.11
+      resolvedPath: G:\GitHub\Unity-Projects\Unity Course\Obstacle Course\Library\PackageCache\com.unity.ide.visualstudio@2.0.12
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -485,13 +484,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637613656180000000
+      datePublishedTicks: 637720564750000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-        revision: 680e06d94ffca728223ae2cb14bb919cd354e2c1
+        revision: 8d436ff053b9c59677b5e9799208143553cd02d9
         path: 
     - packageId: com.unity.ide.vscode@1.2.4
       testable: 0
@@ -2988,4 +2987,4 @@ m_PackageAssets:
   m_LocalPackages:
     m_LocalFileStatus: []
 m_ProjectPath: G:/GitHub/Unity-Projects/Unity Course/Obstacle Course/Packages
-m_EditorVersion: 2020.3.23f1 (c5d91304a876)
+m_EditorVersion: 2020.3.25f1 (9b9180224418)
