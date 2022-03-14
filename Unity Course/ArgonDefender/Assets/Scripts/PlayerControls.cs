@@ -1,19 +1,36 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
+using UnityEngine.Serialization;
+using UnityEngine.UIElements;
 
 public class PlayerControls : MonoBehaviour
 {
+    [Header("General Setup Settings")]
+    [Tooltip(("How fast ship moves up and down upon player input"))]
     [SerializeField] float angularSpeed = 20f;
-    [SerializeField] private float xPosRange = 11f;
-    [SerializeField] private float yPosRange = 7f;
-
+    [Tooltip("How far the player can move on the X axis of the screen")]
+    [SerializeField] private float xPosRange = 18f;
+    [Tooltip("How far the player can move on the Y axis of the screen")]
+    [SerializeField] private float yPosRange = 14f;
+    
+    [Header("Lasers Array")]
+    [SerializeField] private GameObject[] Lasers;
+    
+    [Header("Rotation Tuning")]
     [SerializeField] private float pitchFactor = -2f;
     [SerializeField] private float yawFactor = 2f;
+    
+    [Header("Player input tuning")]
     [SerializeField] private float rollFactor = -20f;
-    [SerializeField] private float verticalPitchFactor = -10f;
-    [SerializeField] private float rotationFactor = 1f;
+    [SerializeField] private float nosePitchFactor = -15f;
+    
+    [Header("Smoothness of Rotations")]
+    [SerializeField] private float rotationsFactor = 1f;
+
+    
     
     private float horizontal, vertical;
     
@@ -22,19 +39,47 @@ public class PlayerControls : MonoBehaviour
     {
         TranslatePosition();
         RotatePosition();
+        FireGun();
     }
 
+    void FireGun()
+    {
+        // if pushing fire button
+        if (Input.GetButton("Fire1"))
+        {
+            ActivateLasers(true);
+        }
+        else
+        {
+            ActivateLasers(false);
+        }
+    }
+
+    private void ActivateLasers(bool isActive)
+    {
+        // for each of the lasers turn them on
+        foreach (var laser in Lasers)
+        {
+            var emissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = isActive;
+        }
+    }
+    
     private void RotatePosition()
     {
-        float pitchToPosition = transform.localPosition.y * pitchFactor;
-        float pitchToVertical =  vertical * verticalPitchFactor;
-        float pitch = pitchToPosition + pitchToVertical;
+        float pitchFromPositionY = transform.localPosition.y * pitchFactor;
+        float pitchNose =  vertical * nosePitchFactor;
+        float yawFromPositionX = transform.localPosition.x * yawFactor;
         
-        float yawToPosition = transform.localPosition.x * yawFactor;
-        float yaw = yawToPosition;
+        // pitch nose so that we can go in the direction of down or up and come back to our resting point
+        float pitch = pitchFromPositionY + pitchNose;
+        float yaw = yawFromPositionX;
         float roll = horizontal * rollFactor;
+        
         Quaternion targetRotation = Quaternion.Euler(pitch, yaw, roll);
-        transform.localRotation = Quaternion.RotateTowards(transform.localRotation, targetRotation, rotationFactor);
+        
+        // Smooths our rotations to look less clunky
+        transform.localRotation = Quaternion.RotateTowards(transform.localRotation, targetRotation, rotationsFactor);
         // transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 
