@@ -52,6 +52,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\CollisionHandler.cs" />
      <Compile Include="Assets\AssetPacks\Readme\Readme Files\Scripts\ReadmeStarSparrow.cs" />
      <Compile Include="Assets\Scripts\PlayerControls.cs" />
      <None Include="Assets\AssetPacks\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
